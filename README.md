@@ -1,3 +1,21 @@
+# Mock Data
+We are using json-server and db.json as the database for mock data. 
+To start the server, run npm run mock, which will listen on http://localhost:3000.
+
+
+
+# Test Unitarios
+ng test --no-watch --code-coverage
+
+
+
+
+
+
+
+
+
+
 # HeroManagement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
