@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Menu" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a class="pointer" routerLink="/">Heroes App</a>
+  <span class="spacer"></span>
+  <a mat-icon-button aria-label="favorites" href='https://www.linkedin.com/in/eleazarramoscortes/'>
+    <mat-icon>favorite</mat-icon>
+  </a>
+  <a mat-icon-button aria-label="Share" href='https://www.facebook.com/eleazar.ramoscortes/'>
+    <mat-icon>share</mat-icon>
+  </a>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/form">Crear Heroe</button>
+  </mat-menu>
+</mat-toolbar>
+

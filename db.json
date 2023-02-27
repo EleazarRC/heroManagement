@@ -1,0 +1,279 @@
+{
+  "superheroes": [
+    {
+      "id": 3,
+      "photo": "https://www.example.com/images/wonder-woman.jpg",
+      "alias": "Wonder Woman",
+      "name": "SASAS",
+      "strength": [
+        "Water"
+      ],
+      "weakness": [
+        "Fire"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Lasso of Truth",
+      "active": true
+    },
+    {
+      "id": 4,
+      "photo": "https://www.example.com/images/flash.jpg",
+      "alias": "The Flash",
+      "name": "Barry Allen",
+      "strength": [
+        "Air"
+      ],
+      "weakness": [
+        "Earth"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Super Speed",
+      "active": false
+    },
+    {
+      "id": 5,
+      "photo": "https://www.example.com/images/green-lantern.jpg",
+      "alias": "Green Lantern",
+      "name": "Hal Jordan",
+      "strength": [
+        "Earth"
+      ],
+      "weakness": [
+        "Air"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Power Ring",
+      "active": true
+    },
+    {
+      "id": 6,
+      "photo": "https://www.example.com/images/aquaman.jpg",
+      "alias": "Aquaman",
+      "name": "Arthur Curry",
+      "strength": [
+        "Water"
+      ],
+      "weakness": [
+        "Air"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Talk to Fish",
+      "active": false
+    },
+    {
+      "id": 7,
+      "photo": "https://www.example.com/images/martian-manhunter.jpg",
+      "alias": "Martian Manhunter",
+      "name": "J'onn J'onzz",
+      "strength": [
+        "Fire"
+      ],
+      "weakness": [
+        "Water"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Shape Shifting",
+      "active": true
+    },
+    {
+      "id": 8,
+      "photo": "https://www.example.com/images/black-widow.jpg",
+      "alias": "Black Widow",
+      "name": "Natasha Romanoff",
+      "strength": [
+        "Water"
+      ],
+      "weakness": [
+        "Fire"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Espionage",
+      "active": true
+    },
+    {
+      "id": 9,
+      "photo": "https://www.example.com/images/captain-america.jpg",
+      "alias": "Captain America",
+      "name": "Steve Rogers",
+      "strength": [
+        "Earth"
+      ],
+      "weakness": [
+        "Air"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Shield",
+      "active": false
+    },
+    {
+      "id": 12,
+      "photo": "https://www.example.com/images/hawkeye.jpg",
+      "alias": "Hawkeye",
+      "name": "Clint Barton",
+      "strength": [
+        "Earth",
+        "Air"
+      ],
+      "weakness": [
+        "Fire"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Archery",
+      "active": true
+    },
+    {
+      "id": 13,
+      "photo": "https://www.example.com/images/thor.jpg",
+      "alias": "Thor",
+      "name": "Thor Odinson",
+      "strength": [
+        "Air"
+      ],
+      "weakness": [
+        "Earth"
+      ],
+      "personality": "Ally",
+      "specialAbility": "God of Thunder",
+      "active": false
+    },
+    {
+      "id": 14,
+      "photo": "https://www.example.com/images/scarletwitch.jpg",
+      "alias": "Scarlet Witch",
+      "name": "Wanda Maximoff",
+      "strength": [
+        "Fire",
+        "Air"
+      ],
+      "weakness": [
+        "Water"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Telekinesis",
+      "active": false
+    },
+    {
+      "id": 15,
+      "photo": "https://www.example.com/images/vision.jpg",
+      "alias": "Vision",
+      "name": "Vision",
+      "strength": [
+        "Earth",
+        "Air"
+      ],
+      "weakness": [
+        "Fire"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Energy Blast",
+      "active": true
+    },
+    {
+      "id": 16,
+      "photo": "https://www.example.com/images/antman.jpg",
+      "alias": "Ant-Man",
+      "name": "Scott Lang",
+      "strength": [
+        "Earth"
+      ],
+      "weakness": [
+        "Air"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Shrinking",
+      "active": false
+    },
+    {
+      "id": 17,
+      "photo": "https://www.example.com/images/wonderwoman.jpg",
+      "alias": "Wonder Woman",
+      "name": "Diana Prince",
+      "strength": [
+        "Earth"
+      ],
+      "weakness": [
+        "Fire"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Super Strength",
+      "active": false
+    },
+    {
+      "id": 18,
+      "photo": "https://www.example.com/images/greenlantern.jpg",
+      "alias": "Green Lantern",
+      "name": "Hal Jordan",
+      "strength": [
+        "Fire"
+      ],
+      "weakness": [
+        "Water"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Power Ring",
+      "active": false
+    },
+    {
+      "id": 19,
+      "photo": "https://www.example.com/images/flash.jpg",
+      "alias": "The Flash",
+      "name": "Barry Allen",
+      "strength": [
+        "Water"
+      ],
+      "weakness": [
+        "Fire"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Super Speed",
+      "active": true
+    },
+    {
+      "id": 20,
+      "photo": "https://www.example.com/images/ironman.jpg",
+      "alias": "Iron Man",
+      "name": "Tony Stark",
+      "strength": [
+        "Fire"
+      ],
+      "weakness": [
+        "Water"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Powered Armor",
+      "active": true
+    },
+    {
+      "id": 21,
+      "photo": "https://www.example.com/images/batman.jpg",
+      "name": "Manolo",
+      "alias": "Batman",
+      "strength": [
+        "Air"
+      ],
+      "weakness": [
+        "Earth",
+        "Air"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Gadgets",
+      "active": false
+    },
+    {
+      "id": 22,
+      "photo": "https://www.example.com/images/batman.jpg",
+      "name": "sadffasdfasdf",
+      "alias": "Batman",
+      "strength": [
+        "Air"
+      ],
+      "weakness": [
+        "Earth",
+        "Air"
+      ],
+      "personality": "Ally",
+      "specialAbility": "Gadgets",
+      "active": false
+    }
+  ]
+}

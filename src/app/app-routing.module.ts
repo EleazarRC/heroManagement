@@ -9,6 +9,9 @@ const routes: Routes = [
   },
   {
     path: 'form', component: SuperheroFormComponent
+  },
+  {
+    path: 'form/:id', component: SuperheroFormComponent
   }
 ];
 

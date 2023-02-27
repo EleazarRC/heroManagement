@@ -2,6 +2,8 @@
 We are using json-server and db.json as the database for mock data. 
 To start the server, run npm run mock, which will listen on http://localhost:3000.
 
+# Start
+ npm start   
 
 
 # Test Unitarios

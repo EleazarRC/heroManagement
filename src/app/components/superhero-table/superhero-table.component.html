@@ -1,0 +1,50 @@
+<mat-form-field appearance="fill">
+  <mat-label>Buscar</mat-label>
+  <input matInput (input)="applyFilter($event)" placeholder="Buscar...">
+</mat-form-field>
+  
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 mb-4">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Nombre</th>
+      <td mat-cell *matCellDef="let heroe">{{ heroe.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="alias">
+      <th mat-header-cell *matHeaderCellDef>Alias</th>
+      <td mat-cell *matCellDef="let heroe">{{ heroe.alias }}</td>
+    </ng-container>
+    <ng-container matColumnDef="strength">
+      <th mat-header-cell *matHeaderCellDef>Fortalezas</th>
+      <td mat-cell *matCellDef="let heroe">{{ heroe.strength }}</td>
+    </ng-container>
+    <ng-container matColumnDef="weakness">
+      <th mat-header-cell *matHeaderCellDef>Debilidades</th>
+      <td mat-cell *matCellDef="let heroe">{{ heroe.weakness }}</td>
+    </ng-container>
+    <ng-container matColumnDef="activate">
+      <th mat-header-cell *matHeaderCellDef>¿En Activo?</th>
+      <td mat-cell *matCellDef="let heroe">
+        <mat-slide-toggle (change)="changeStateHero(heroe)" [checked]="heroe.active === true ? true : false">
+        </mat-slide-toggle>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef>Editar</th>
+      <td mat-cell *matCellDef="let heroe" class="spacer">
+        <a mat-icon-button [routerLink]="['/form', heroe.id]">
+          <mat-icon class="pointer" color="primary">edit</mat-icon>
+        </a>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef>Borrar</th>
+      <td mat-cell *matCellDef="let heroe" class="spacer">
+        <span (click)="this.deleteHero(heroe)">
+          <mat-icon class="pointer" color="warn">delete</mat-icon>
+        </span>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+<mat-paginator [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
+[length]="dataSource.data.length"></mat-paginator>

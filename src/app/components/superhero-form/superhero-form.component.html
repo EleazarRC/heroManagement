@@ -1,0 +1,134 @@
+<h2 *ngIf="superHero">Editando a: {{ superHero?.name }}</h2>
+<h2 *ngIf="!superHero">Creando nuevo super héroe</h2>
+
+<form
+  class="example-form"
+  (ngSubmit)="saveHero()"
+  autocomplete="off"
+  [formGroup]="miFormulario"
+>
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input
+      type="text"
+      appUppercase 
+      matInput
+      formControlName="name"
+      [ngModel]="superHero?.name"
+      placeholder="Nombre del super héroe"
+    />
+    <mat-error *ngIf="fieldIsValid('name')">
+      El campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+   <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Foto</mat-label>
+    <input
+      type="text"
+      matInput
+      formControlName="photo"
+      [ngModel]="superHero?.photo"
+      placeholder="ruta de la foto"
+    />
+    <mat-error *ngIf="fieldIsValid('photo')">
+      El campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Alias</mat-label>
+    <input
+      type="text"
+      matInput
+      formControlName="alias"
+      [ngModel]="superHero?.alias"
+      placeholder="Alias del super héroe"
+    />
+    <mat-error *ngIf="fieldIsValid('alias')">
+      El campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Fortalezas</mat-label>
+    <input
+      type="text"
+      matInput
+      formControlName="strength"
+      [ngModel]="superHero?.strength"
+      placeholder="Fortaleza del super héroe"
+    />
+    <mat-error *ngIf="fieldIsValid('strength')">
+      El campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Debilidades</mat-label>
+    <input
+      type="text"
+      matInput
+      formControlName="weakness"
+      [ngModel]="superHero?.weakness"
+      placeholder="Debilidades del super héroe"
+    />
+    <mat-error *ngIf="fieldIsValid('weakness')">
+      El campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Personalidad</mat-label>
+    <input
+      type="text"
+      matInput
+      formControlName="personality"
+      [ngModel]="superHero?.personality"
+      placeholder="fortalezas"
+    />
+    <mat-error *ngIf="fieldIsValid('personality')">
+      El campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="w-100" appearance="outline">
+    <mat-label>Especialidad</mat-label>
+    <input
+      type="text"
+      matInput
+      formControlName="specialAbility"
+      [ngModel]="superHero?.specialAbility"
+      placeholder="fortalezas"
+    />
+    <mat-error *ngIf="fieldIsValid('specialAbility')">
+      El campo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+  <mat-slide-toggle formControlName="active" [checked]="superHero ? superHero.active : false">
+    ¿Está en activo este super Héroe?
+  </mat-slide-toggle>
+  <br />
+
+
+  <div class="buttons">
+    <button
+      [disabled]="miFormulario.invalid"
+      type="submit"
+      mat-raised-button
+      color="primary"
+    >
+      Guardar
+    </button>
+
+    <button
+      routerLink="/"
+      type="button"
+      mat-raised-button
+      color="warn"
+    >
+      Cancelar
+    </button>
+  </div>
+</form>
